@@ -4,7 +4,7 @@
 
 <table>
   <thead>
-    <tr>
+    <tr class="animals">
       <th>Species</th>
       <th>Count of times seen</th>
       <th>Location of last seen</th>
@@ -15,7 +15,7 @@
 
   <tbody>
     <% @animals.each do |animal| %>
-      <tr>
+      <tr class="animals">
         <td><%= animal.species %></td>
         <td><%= animal.count_of_times_seen %></td>
         <td><%= animal.location_of_last_seen %></td>
