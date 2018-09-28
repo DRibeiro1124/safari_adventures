@@ -19,7 +19,7 @@
         <td><%= animal.species %></td>
         <td><%= animal.count_of_times_seen %></td>
         <td><%= animal.location_of_last_seen %></td>
-        <td><img src="<%= animal.location_of_last_seen %>"/></td>
+        <td><img src="<%= animal.photo %>"/></td>
         <td><%= link_to 'Show', animal %></td>
         <td><%= link_to 'Edit', edit_animal_path(animal) %></td>
         <td><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
