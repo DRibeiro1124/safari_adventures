@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr class="animals">
+      <th>Id</th>
       <th>Species</th>
       <th>Count of times seen</th>
       <th>Location of last seen</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @animals.each do |animal| %>
       <tr class="animals">
+        <td><%= animal.id %></td>
         <td><%= animal.species %></td>
         <td><%= animal.count_of_times_seen %></td>
         <td><%= animal.location_of_last_seen %></td>
